@@ -1,0 +1,2 @@
+cinza claro (blocos): #262626
+cinza escuro (fundo): #212121

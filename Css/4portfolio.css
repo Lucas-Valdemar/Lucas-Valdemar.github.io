@@ -1,0 +1,44 @@
+#sectionPortfolio {
+  background-color: #292929;
+  display: block;
+  height: 350px;
+  width: 360px;
+  margin: 10px auto;
+}
+
+#portfolioItem2 {
+}
+#portfolioItem3,
+#portfolioItem4,
+#portfolioItem5 {
+  width: 108px;
+}
+.portNavigation {
+  list-style-type: none;
+  color: white;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.portImages {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.portNavItem {
+  display: inline-block;
+  padding: 0px;
+}
+#portNavItem1,
+#portNavItem2,
+#portNavItem3,
+#portNavItem4,
+#portNavItem5 {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}

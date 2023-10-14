@@ -1,0 +1,52 @@
+header {
+  background-color: #292929;
+  height: 64px;
+  display: block;
+  top: 0px;
+  position: sticky;
+  z-index: 1;
+}
+#VALDEV {
+  color: orangered;
+  font-size: 28px;
+  margin: 0;
+  display: block;
+  margin: 0 auto;
+
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  background: -webkit-linear-gradient(
+    left,
+    orange,
+    orangered,
+    rgb(236, 48, 104)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.navigation {
+  list-style-type: none;
+  color: white;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.navItem {
+  display: inline-block;
+  padding: 2px;
+}
+
+#navItem1,
+#navItem2,
+#navItem3,
+#navItem4,
+#navItem5 {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}

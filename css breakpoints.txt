@@ -1,0 +1,74 @@
+/* 10 - breakpoints */
+.x {
+  font-size: 3em;
+}
+
+/* 320px - 480px = mobile */
+/* Em mobile first não precisa de MQ */
+.x {
+  color: aqua;
+}
+
+/* 480px - 768px = tablet */
+@media (min-width: 480px) {
+  .x {
+    color: burlywood;
+  }
+}
+
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px) {
+  .x {
+    color: cadetblue;
+  }
+}
+
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px) {
+  .x {
+    color: coral;
+  }
+}
+
+/* 1200 e + = telas maiores, tvs */
+@media (min-width: 1200px) {
+  .x {
+    color: darkorchid;
+  }
+}
+
+
+
+
+
+
+/* 320px - 480px = mobile */
+/* Em mobile first não precisa de MQ */
+
+/* 480px - 768px = tablet */
+@media (min-width: 480px) {
+  .x {
+    
+  }
+}
+
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px) {
+  .x {
+    
+  }
+}
+
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px) {
+  .x {
+    
+  }
+}
+
+/* 1200 e + = telas maiores, tvs */
+@media (min-width: 1200px) {
+  .x {
+   
+  }
+}

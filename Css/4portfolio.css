@@ -2,7 +2,6 @@
   background-color: #292929;
   display: block;
   height: 350px;
-  width: 360px;
   margin: 10px auto;
 }
 
@@ -11,8 +10,11 @@
 #portfolioItem3,
 #portfolioItem4,
 #portfolioItem5 {
-  width: 108px;
+  width: 96px;
+
+  display: block;
 }
+
 .portNavigation {
   list-style-type: none;
   color: white;
@@ -22,10 +24,24 @@
   margin-bottom: 40px;
 }
 .portImages {
+  margin: 0 auto;
+  width: 320px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
 }
+.imgLinks {
+  display: block;
+  width: fit-content;
+}
+
+.progress {
+  position: relative;
+  top: -25px;
+  width: 96px;
+  display: block;
+}
+
 .portNavItem {
   display: inline-block;
   padding: 0px;

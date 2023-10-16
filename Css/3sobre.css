@@ -1,7 +1,6 @@
 #sectionAbout {
   margin: 10px auto;
   height: fit-content;
-  width: 360px;
   background-color: #292929;
 }
 #aboutItem1 {
@@ -34,6 +33,6 @@
   position: relative;
   display: block;
   margin: 0 auto;
-  width: 358px;
+  width: 100%;
   padding-top: 20px;
 }

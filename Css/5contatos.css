@@ -8,7 +8,6 @@
   background-color: #292929;
   display: block;
   height: 550px;
-  width: 360px;
   margin: 10px auto;
 }
 .contactGrid {
@@ -17,14 +16,17 @@
 }
 
 #contactItem2 {
-  padding-left: 10px;
   grid-area: contactItem2;
+  width: fit-content;
+  margin: 0 auto;
+  margin-right: 10px;
 }
 
 .contactRS {
   grid-area: contactRS;
   padding-top: 20px;
   padding-left: 10px;
+  width: fit-content;
 }
 
 #contactItem3 img,

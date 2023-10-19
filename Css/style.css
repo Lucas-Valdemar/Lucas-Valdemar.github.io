@@ -1,9 +1,9 @@
-@import url("/css/1header.css");
-@import url("/css/2Inicio.css");
-@import url("/css/3sobre.css");
-@import url("/css/4portfolio.css");
-@import url("/css/5contatos.css");
-
+@import url("../css/1header.css");
+@import url("../css/2Inicio.css");
+@import url("../css/3sobre.css");
+@import url("../css/4portfolio.css");
+@import url("../css/5contatos.css");
+@import url("../Css/footer.css");
 body {
   background-color: #212121;
   font-family: "Segoe UI", sans-serif;
@@ -24,4 +24,10 @@ h2 {
 }
 a {
   text-decoration: none;
+}
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 36px;
+  }
 }

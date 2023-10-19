@@ -1,0 +1,31 @@
+body {
+  background-color: #212121;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+}
+.container {
+  background-color: #292929;
+  margin: 0 auto;
+  width: 80%;
+  height: fit-content;
+  min-width: 320px;
+  max-width: 480px;
+}
+
+h1 {
+  font-weight: 800;
+  margin-top: 100px;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 15px;
+  color: orange;
+}
+p {
+  padding-inline: 15px;
+  padding-bottom: 50px;
+  color: white;
+  font-weight: lighter;
+}
+a {
+  color: blueviolet;
+}

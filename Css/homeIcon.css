@@ -1,0 +1,10 @@
+.homeIcon img {
+  width: 50px;
+  position: relative;
+  left: 220px;
+}
+a {
+  position: sticky;
+  top: 2px;
+  z-index: 1;
+}

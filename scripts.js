@@ -61,43 +61,64 @@ class ImgSelector {
       imgParent.appendChild(img1);
       imgParent.appendChild(img2);
       imgParent.appendChild(img3);
-      imgParent.style.width = "320px";
-      item1.style.width = "96px";
-      item2.style.width = "96px";
-      item3.style.width = "96px";
-      prog1.style.width = "96px";
-      prog2.style.width = "96px";
-      prog3.style.width = "96px";
-      prog1.style.top = "-25px";
-      prog2.style.top = "-25px";
-      prog3.style.top = "-25px";
+      imgParent.style.width = "";
+      item1.style.width = "";
+      item2.style.width = "";
+      item3.style.width = "";
+      prog1.style.width = "";
+      prog2.style.width = "";
+      prog3.style.width = "";
+      prog1.style.top = "";
+      prog2.style.top = "";
+      prog3.style.top = "";
     }
     if (tabNumber == 2) {
       img2.remove();
       img3.remove();
       imgParent.appendChild(img1);
-      imgParent.style.width = "200px";
-      item1.style.width = "200px";
-      prog1.style.width = "200px";
-      prog1.style.top = "-50px";
+      if (window.matchMedia("(min-width:1024px)").matches) {
+        imgParent.style.width = "320px";
+        item1.style.width = "320px";
+        prog1.style.width = "320px";
+        prog1.style.top = "-82px";
+      } else {
+        imgParent.style.width = "200px";
+        item1.style.width = "200px";
+        prog1.style.width = "200px";
+        prog1.style.top = "-50px";
+      }
     }
     if (tabNumber == 3) {
       img1.remove();
       img3.remove();
       imgParent.appendChild(img2);
-      imgParent.style.width = "200px";
-      item2.style.width = "200px";
-      prog2.style.width = "200px";
-      prog2.style.top = "-50px";
+      if (window.matchMedia("(min-width:1024px)").matches) {
+        imgParent.style.width = "320px";
+        item2.style.width = "320px";
+        prog2.style.width = "320px";
+        prog2.style.top = "-82px";
+      } else {
+        imgParent.style.width = "200px";
+        item2.style.width = "200px";
+        prog2.style.width = "200px";
+        prog2.style.top = "-50px";
+      }
     }
     if (tabNumber == 4) {
       img1.remove();
       img2.remove();
       imgParent.appendChild(img3);
-      imgParent.style.width = "200px";
-      item3.style.width = "200px";
-      prog3.style.width = "200px";
-      prog3.style.top = "-50px";
+      if (window.matchMedia("(min-width:1024px)").matches) {
+        imgParent.style.width = "320px";
+        item3.style.width = "320px";
+        prog3.style.width = "320px";
+        prog3.style.top = "-82px";
+      } else {
+        imgParent.style.width = "200px";
+        item3.style.width = "200px";
+        prog3.style.width = "200px";
+        prog3.style.top = "-50px";
+      }
     }
   }
 }
@@ -128,7 +149,6 @@ const img = new ImgSelector(navigationName, imgName);
 buttons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     const value = e.target.id;
-    console.log(value);
     img.getTabName(value);
     img.updateTabColor();
     img.updateImg();
@@ -137,4 +157,3 @@ buttons.forEach((btn) => {
 
 img.updateTabColor();
 img.updateImg();
-console.log(imgName);

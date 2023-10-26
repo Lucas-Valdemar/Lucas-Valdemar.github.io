@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Site</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="VALDEV">VALDEV</h1>
+      <nav>
+        <ul class="navigation">
+          <li class="navItem">
+            <a id="navItem2" href="#sectionHome">Início</a>
+          </li>
+          <li class="navItem">
+            <a id="navItem3" href="#sectionAbout">Sobre Mim</a>
+          </li>
+          <li class="navItem">
+            <a id="navItem4" href="#sectionPortfolio">Portfólio</a>
+          </li>
+          <li class="navItem">
+            <a id="navItem5" href="#sectionContact">Contatos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="sectionHome">
+      <div class="homeGrid">
+        <p id="homeItem1">Lucas Valdemar</p>
+        <p id="homeItem2">FRONTEND DEV</p>
+        <a href="#sectionContact" id="homeItem3">CONTATOS</a>
+      </div>
+      <img src="imgs/char cartoon.png" alt="cartoon" id="homeItem4" />
+    </div>
+
+    <div id="sectionAbout">
+      <div class="aboutGrid">
+        <h2 id="aboutItem1">Sobre Mim</h2>
+        <div id="aboutItem2">Desenvolvedor FrontEND</div>
+        <p id="devText">html - css - javascript</p>
+        <p id="aboutItem3">
+          Atualmente estudando pra se tornar um FRONTEND DEV, com foco em React,
+          Typescript e MySQL. No momento conto com projetos em html, css,
+          javascript e consumo básico de API. Em um futuro próximo também terei
+          projetos usando PHP, React, typescript e consumo de API com MySQL.
+        </p>
+      </div>
+      <img src="imgs/working.jpg" alt="working" id="aboutItem4" />
+    </div>
+
+    <div id="sectionPortfolio">
+      <h2 id="portfolioItem1">Meu Portfólio</h2>
+      <nav>
+        <ul class="portNavigation" id="portfolioItem2">
+          <li class="portNavItem">
+            <button class="button" id="portNavItem1">Todos</button>
+          </li>
+          <li class="portNavItem">
+            <button class="button" id="portNavItem2">Qual o número?</button>
+          </li>
+          <li class="portNavItem">
+            <button class="button" id="portNavItem3">Calculadora</button>
+          </li>
+          <li class="portNavItem">
+            <button class="button" id="portNavItem4">Em breve</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="portImages" id="portImgViewer">
+        <a
+          href="Projeto - Qual é o numero/index.html"
+          class="imgLinks"
+          id="portImg1"
+        >
+          <img
+            src="imgs/qual o numero img.png"
+            alt="qualonumero img"
+            id="portfolioItem3"
+          />
+          <img
+            src="imgs/concluído.png"
+            alt="concluido"
+            class="progress"
+            id="progress1"
+          />
+        </a>
+
+        <a
+          href="Projeto - Calculadora/index.html"
+          class="imgLinks"
+          id="portImg2"
+        >
+          <img
+            src="imgs/calculadora img.png"
+            alt="calculadora img"
+            id="portfolioItem4"
+          />
+          <img
+            src="imgs/Em Progresso.png"
+            alt="progresso"
+            class="progress"
+            id="progress2"
+          />
+        </a>
+
+        <a href="" class="imgLinks" id="portImg3">
+          <img
+            src="imgs/placeholder-1024x1024.png"
+            alt="placeholder-1024x1024"
+            id="portfolioItem5"
+          />
+          <img
+            src="imgs/Em Breve.png"
+            alt="breve"
+            class="progress"
+            id="progress3"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div id="sectionContact">
+      <h2 id="contactItem1">Meus Contatos</h2>
+      <div class="contactGrid">
+        <div id="contactItem2">
+          <p id="contactItem2Message">Envie uma Mensagem</p>
+          <form
+            autocomplete="off"
+            action="https://formsubmit.co/725af28c102f2d833f6b1a64c9878367"
+            method="POST"
+          >
+            <label class="custom-field" id="field1">
+              <input
+                type="text"
+                class="formContact"
+                id="contactName"
+                name="name"
+                required
+              />
+              <span class="placeholder">Nome</span>
+            </label>
+            <label class="custom-field" id="field2">
+              <input
+                type="email"
+                class="formContact"
+                id="contactEmail"
+                name="email"
+                required
+              />
+              <span class="placeholder">Email</span>
+            </label>
+            <label class="custom-field" id="field3">
+              <textarea
+                type="text"
+                class="formContact"
+                id="contactText"
+                name="message"
+                rows="12"
+                required
+              ></textarea>
+              <span class="placeholder">Digite sua mensagem</span>
+            </label>
+            <button type="submit" class="formContact">Enviar</button>
+            <label class="thanks">
+              <input
+                type="hidden"
+                name="_next"
+                value="https://sitedovaldemar.000webhostapp.com/FormSubmit/index.html"
+            /></label>
+          </form>
+        </div>
+        <div class="contactRS">
+          <div id="contactItem3">
+            <div id="emailItem">
+              <div class="iconAndLink">
+                <a class="link">
+                  <img class="icon" src="imgs/email.png" alt="emailIcon"
+                /></a>
+              </div>
+              <a class="contactp1">Email</a>
+            </div>
+            <a class="contactp2">contato.lucas_valdemar@gmail.com</a>
+          </div>
+          <div id="contactItem4">
+            <div id="gitItem">
+              <div class="iconAndLink">
+                <a
+                  class="link"
+                  href="https://github.com/Lucas-Valdemar"
+                  target="_blank"
+                >
+                  <img class="icon" src="imgs/git.png" alt="gitIcon"
+                /></a>
+              </div>
+
+              <a
+                href="https://github.com/Lucas-Valdemar"
+                target="_blank"
+                class="contactp1"
+                >GitHub ◥</a
+              >
+            </div>
+            <a
+              href="https://github.com/Lucas-Valdemar"
+              target="_blank"
+              class="contactp2"
+              >github.com/Lucas-Valdemar</a
+            >
+          </div>
+          <div id="contactItem5">
+            <div id="linkedinItem">
+              <div class="iconAndLink">
+                <a
+                  class="link"
+                  href="https://www.linkedin.com/in/lucas-valdemar-561375294/"
+                  target="_blank"
+                  ><img class="icon" src="imgs/linkedin.png" alt="linkedinIcon"
+                /></a>
+              </div>
+
+              <a
+                href="https://www.linkedin.com/in/lucas-valdemar-561375294/"
+                target="_blank"
+                class="contactp1"
+                >Linkedin ◥</a
+              >
+            </div>
+            <a
+              href="https://www.linkedin.com/in/lucas-valdemar-561375294/"
+              target="_blank"
+              class="contactp2"
+            >
+              in/lucas-valdemar-561375294/
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p>2023 © | Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>

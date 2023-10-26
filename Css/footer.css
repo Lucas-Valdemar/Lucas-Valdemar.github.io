@@ -1,0 +1,38 @@
+footer {
+  background-color: #292929;
+  min-width: 360px;
+  max-width: 480px;
+  height: 60px;
+  margin: 0 auto;
+}
+.footer {
+  margin: 0 auto;
+  font-size: 14px;
+  color: white;
+  font-weight: lighter;
+  padding: 7px;
+  width: fit-content;
+  display: block;
+}
+
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px) {
+  footer {
+    max-width: 752px;
+    height: 65px;
+  }
+  .footer {
+    font-size: 16px;
+  }
+}
+
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px) {
+  footer {
+    max-width: none;
+    height: fit-content;
+  }
+  .footer {
+    font-size: 24px;
+  }
+}

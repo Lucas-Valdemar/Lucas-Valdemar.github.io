@@ -157,3 +157,15 @@ buttons.forEach((btn) => {
 
 img.updateTabColor();
 img.updateImg();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const emailInput = document.getElementById("contactEmail");
+  const placeholder = document.querySelector("#field2placeholder");
+
+  emailInput.addEventListener("input", function () {
+    placeholder.classList.toggle("show", emailInput.value.trim() !== "");
+  });
+
+  // Initial check for content on page load
+  placeholder.classList.toggle("show", emailInput.value.trim() !== "");
+});

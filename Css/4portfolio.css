@@ -1,0 +1,116 @@
+#sectionPortfolio {
+  background-color: #292929;
+  display: block;
+  height: fit-content;
+  margin: 10px auto;
+  min-width: 360px;
+  max-width: 480px;
+}
+
+#portfolioItem3,
+#portfolioItem4,
+#portfolioItem5 {
+  width: 96px;
+
+  display: block;
+}
+
+.portNavigation {
+  list-style-type: none;
+  color: white;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.portImages {
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.imgLinks {
+  display: block;
+  width: fit-content;
+}
+
+.progress {
+  position: relative;
+  top: -25px;
+  width: 96px;
+  display: block;
+}
+
+.portNavItem {
+  display: inline-block;
+  padding: 0px;
+}
+#portNavItem1,
+#portNavItem2,
+#portNavItem3,
+#portNavItem4,
+#portNavItem5 {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px) {
+  #sectionPortfolio {
+    max-width: 752px;
+  }
+  .portNavItem {
+    font-size: 20px;
+    padding-inline: 5px;
+  }
+  .portImages {
+    width: 520px;
+  }
+
+  #portfolioItem3,
+  #portfolioItem4,
+  #portfolioItem5 {
+    width: 150px;
+    display: block;
+  }
+  .progress {
+    position: relative;
+    top: -25px;
+    width: 150px;
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #sectionPortfolio {
+    max-width: none;
+    height: 480px;
+    justify-content: center;
+    grid-template-columns: minmax(554px, 770px) minmax(454px, 630px);
+  }
+  .portNavigation {
+  }
+  .portNavItem {
+    font-size: 24px;
+    padding-inline: 10px;
+  }
+  .portImages {
+    width: 850px;
+  }
+  #portfolioItem3,
+  #portfolioItem4,
+  #portfolioItem5 {
+    width: 250px;
+    display: block;
+  }
+  .progress {
+    position: relative;
+    top: -64px;
+    width: 250px;
+    display: block;
+  }
+}

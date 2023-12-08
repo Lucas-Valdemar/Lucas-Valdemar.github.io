@@ -14,11 +14,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
+
 nav {
   display: inline-block;
   display: flex;

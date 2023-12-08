@@ -9,6 +9,9 @@ body {
   font-family: "Segoe UI", sans-serif;
   font-weight: bold;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav {
   display: inline-block;

@@ -107,13 +107,13 @@
     font-size: 1.25rem;
     margin: 0 auto;
     width: fit-content;
-    width: 5.625rem;
   }
   .aboutGrid {
     justify-content: center;
   }
   #aboutItem4 {
-    max-width: 5.625rem;
+    width: 80%;
+    max-width: 32rem;
     padding-bottom: 0rem;
   }
 }

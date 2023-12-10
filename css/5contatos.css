@@ -7,11 +7,12 @@
 #sectionContact {
   background-color: #292929;
   display: block;
-  height: 550px;
-  margin: 10px 0;
-  min-width: 360px;
-  max-width: 480px;
+  height: 34.375rem;
+  margin: 0.625rem auto;
+  min-width: 22.5rem;
+  max-width: 30rem;
 }
+
 .contactGrid {
   display: grid;
   grid-template-areas: "contactItem2 contactRS";
@@ -21,13 +22,13 @@
   grid-area: contactItem2;
   width: fit-content;
   margin: 0 auto;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .contactRS {
   grid-area: contactRS;
-  padding-top: 20px;
-  padding-left: 10px;
+  padding-top: 1.25rem;
+  padding-left: 0.625rem;
   width: fit-content;
 }
 
@@ -35,35 +36,39 @@
 #contactItem4 img,
 #contactItem5 img {
   display: inline-block;
-  width: 30px;
+  width: 1.875rem;
   margin: 0 auto;
 }
+
 #contactItem3,
 #contactItem4,
 #contactItem5 {
   height: fit-content;
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
+
 #emailItem,
 #gitItem {
   display: inline-block;
   font-weight: lighter;
 }
+
 .contactp1 {
   margin: 0;
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
   display: inline-block;
 }
+
 .contactp2 {
   margin: 0;
   color: white;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: lighter;
   display: block;
-  padding-left: 4px;
-  padding-top: 4px;
+  padding-left: 0.25rem;
+  padding-top: 0.25rem;
   text-decoration: none;
 }
 
@@ -74,12 +79,14 @@
 .iconAndLink {
   display: inline-block;
 }
+
 .icon {
   position: relative;
-  top: 9px;
+  top: 0.5625rem;
 }
+
 .link {
-  height: 30px;
+  height: 1.875rem;
   position: relative;
 }
 
@@ -225,35 +232,72 @@
     font-size: 14px;
   }
 }
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 48rem) {
+  #sectionContact {
+    max-width: 47rem;
+  }
+  .contactGrid {
+    margin: 0 auto;
+    width: 34.375rem;
+  }
+  #contactItem2 {
+    margin: 0 auto;
+  }
+  .contactRS {
+    margin: 0 auto;
+  }
+  .custom-field input,
+  .custom-field textarea {
+    width: 14.375rem;
+  }
+  #contactItem2Message {
+    font-size: 1.25rem;
+  }
+  #contactItem2 button {
+    width: 6.25rem;
+    height: 3.125rem;
+  }
+  .icon {
+    width: 2.5rem;
+  }
+  .contactp1 {
+    font-size: 1.375rem;
+  }
+  .contactp2 {
+    font-size: 0.875rem;
+  }
+}
+
 /* 1024px - 1200px = desktop */
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   #sectionContact {
     max-width: none;
   }
   #contactItem2Message {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   .contactGrid {
-    width: 1000px;
+    width: 62.5rem;
   }
   .custom-field input,
   .custom-field textarea {
-    width: 380px;
+    width: 23.75rem;
   }
 
   .contactp1 {
-    font-size: 30px;
+    font-size: 1.875rem;
     position: relative;
-    top: -4px;
+    top: -0.25rem;
   }
   .contactp2 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   #contactItem3 img,
   #contactItem4 img,
   #contactItem5 img {
     display: inline-block;
-    width: 50px;
+    width: 3.125rem;
     margin: 0 auto;
   }
 }

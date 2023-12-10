@@ -2,34 +2,35 @@
   background-color: #292929;
   display: block;
   height: fit-content;
-  margin: 10px 0;
-  min-width: 360px;
-  max-width: 480px;
+  margin: 0.625rem auto;
+  min-width: 22.5rem;
+  max-width: 30rem;
 }
 
 #portfolioItem3,
 #portfolioItem4,
 #portfolioItem5 {
-  width: 96px;
-
+  width: 6rem;
   display: block;
 }
 
 .portNavigation {
   list-style-type: none;
   color: white;
-  font-size: 13px;
+  font-size: 0.8125rem;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
+
 .portImages {
   margin: 0 auto;
-  width: 320px;
+  width: 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .imgLinks {
   display: block;
   width: fit-content;
@@ -37,15 +38,16 @@
 
 .progress {
   position: relative;
-  top: -25px;
-  width: 96px;
+  top: -1.5625rem;
+  width: 6rem;
   display: block;
 }
 
 .portNavItem {
   display: inline-block;
-  padding: 0px;
+  padding: 0;
 }
+
 #portNavItem1,
 #portNavItem2,
 #portNavItem3,
@@ -60,57 +62,62 @@
 }
 
 /* 768px - 1024px = telas menores, laptops */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   #sectionPortfolio {
-    max-width: 752px;
+    max-width: 47rem;
   }
   .portNavItem {
-    font-size: 20px;
-    padding-inline: 5px;
+    font-size: 1.25rem;
+    padding-inline: 0.3125rem;
   }
   .portImages {
-    width: 520px;
+    width: 32.5rem;
   }
 
   #portfolioItem3,
   #portfolioItem4,
   #portfolioItem5 {
-    width: 150px;
+    width: 9.375rem;
     display: block;
   }
   .progress {
     position: relative;
-    top: -25px;
-    width: 150px;
+    top: -1.5625rem;
+    width: 9.375rem;
     display: block;
   }
 }
-@media (min-width: 1024px) {
+
+/* 1024px - 1200px = desktop */
+@media (min-width: 64rem) {
   #sectionPortfolio {
     max-width: none;
-    height: 480px;
+    height: 30rem;
     justify-content: center;
-    grid-template-columns: minmax(554px, 770px) minmax(454px, 630px);
+    grid-template-columns: minmax(34.625rem, 48.125rem) minmax(
+        28.375rem,
+        39.375rem
+      );
   }
   .portNavigation {
   }
   .portNavItem {
-    font-size: 24px;
-    padding-inline: 10px;
+    font-size: 1.5rem;
+    padding-inline: 0.625rem;
   }
   .portImages {
-    width: 850px;
+    width: 53.125rem;
   }
   #portfolioItem3,
   #portfolioItem4,
   #portfolioItem5 {
-    width: 250px;
+    width: 15.625rem;
     display: block;
   }
   .progress {
     position: relative;
-    top: -64px;
-    width: 250px;
+    top: -4rem;
+    width: 15.625rem;
     display: block;
   }
 }

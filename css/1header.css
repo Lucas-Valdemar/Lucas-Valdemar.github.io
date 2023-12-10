@@ -1,22 +1,22 @@
 header {
   background-color: #292929;
-  height: 64px;
+  height: 4rem;
   display: block;
-  top: 0px;
+  top: 0;
   position: sticky;
   z-index: 1;
   outline: thick solid #212121;
-  min-width: 360px;
-  max-width: 480px;
-  margin: 0 0;
+  min-width: 22.5rem;
+  max-width: 30rem;
+  margin: 0 auto;
 }
+
 #VALDEV {
   color: orangered;
-  font-size: 28px;
+  font-size: 1.75rem;
   margin: 0;
   display: block;
   margin: 0 auto;
-
   font-family: "Segoe UI", sans-serif;
   font-weight: bold;
   background: -webkit-linear-gradient(
@@ -33,13 +33,14 @@ header {
 .navigation {
   list-style-type: none;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 0;
   margin: 0;
 }
+
 .navItem {
   display: inline-block;
-  padding: 2px;
+  padding: 0.125rem;
 }
 
 #navItem1,
@@ -56,26 +57,27 @@ header {
 }
 
 /* 768px - 1024px = telas menores, laptops */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   header {
-    max-width: 752px;
+    max-width: 47rem;
   }
   .navItem {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
   }
 }
+
 /* 1024px - 1200px = desktop */
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   header {
     max-width: none;
-    height: 100px;
+    height: 6.25rem;
   }
   #VALDEV {
-    font-size: 44px;
+    font-size: 2.75rem;
   }
   .navItem {
-    font-size: 25px;
-    padding-inline: 20px;
+    font-size: 1.5625rem;
+    padding-inline: 1.25rem;
   }
 }

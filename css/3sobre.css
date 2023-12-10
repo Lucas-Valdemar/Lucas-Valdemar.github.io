@@ -1,10 +1,11 @@
 #sectionAbout {
-  margin: 10px 0;
+  margin: 0.625rem auto;
   height: fit-content;
   background-color: #292929;
-  min-width: 360px;
-  max-width: 480px;
+  min-width: 22.5rem;
+  max-width: 30rem;
 }
+
 #aboutItem1 {
   grid-area: aboutItem1;
 }
@@ -12,27 +13,28 @@
 #aboutItem2 {
   text-align: center;
   font-weight: bold;
-
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 0 auto;
   grid-area: aboutItem2;
 }
+
 #devText {
   text-align: center;
   font-weight: bold;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0 auto;
   grid-area: devText;
 }
+
 #aboutItem3 {
-  width: 340px;
+  width: 21.25rem;
   color: white;
   margin: 0 auto;
   font-weight: lighter;
   word-break: break-word;
-  padding-top: 20px;
+  padding-top: 1.25rem;
   padding-bottom: 3rem;
   grid-area: aboutItem3;
 }
@@ -42,18 +44,20 @@
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: 360px;
-  padding-top: 20px;
+  max-width: 22.5rem;
+  padding-top: 1.25rem;
   grid-area: aboutItem4;
 }
+
 .aboutGrid {
   grid-area: aboutGrid;
 }
+
 /* 768px - 1024px = telas menores, laptops */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   #sectionAbout {
     height: fit-content;
-    max-width: 752px;
+    max-width: 47rem;
   }
   #aboutItem1 {
     margin: auto;
@@ -63,7 +67,7 @@
   }
   #devText {
     margin: auto;
-    width: 300px;
+    width: 18.75rem;
   }
   #aboutItem3 {
     width: 70%;
@@ -72,11 +76,12 @@
   #aboutItem4 {
     margin: auto;
     padding: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 0.625rem;
   }
 }
+
 /* 1024px - 1200px = desktop */
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   #sectionAbout {
     display: grid;
     grid-template-areas: "aboutGrid aboutItem4";
@@ -84,29 +89,31 @@
     max-width: none;
     justify-content: center;
     height: fit-content;
-    grid-template-columns: minmax(554px, 770px) minmax(454px, 630px);
+    grid-template-columns: minmax(34.625rem, 48.125rem) minmax(
+        28.375rem,
+        39.375rem
+      );
   }
   #aboutItem1 {
-    padding-bottom: clamp(40px, 10%, 100px);
+    padding-bottom: clamp(2.5rem, 10%, 6.25rem);
   }
   #aboutItem2 {
-    font-size: 32px;
+    font-size: 2rem;
   }
   #devText {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   #aboutItem3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0 auto;
     width: fit-content;
-    width: 90%;
+    width: 5.625rem;
   }
   .aboutGrid {
     justify-content: center;
   }
   #aboutItem4 {
-    /* teste */
-    max-width: 90%;
+    max-width: 5.625rem;
     padding-bottom: 0rem;
   }
 }

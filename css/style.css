@@ -4,15 +4,13 @@
 @import url("../css/4portfolio.css");
 @import url("../css/5contatos.css");
 @import url("../Css/footer.css");
+
 body {
   background-color: #212121;
   font-family: "Segoe UI", sans-serif;
   font-weight: bold;
-  margin: 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  font-size: 16px; /* Assuming a base font size of 16px */
 }
 
 nav {
@@ -21,19 +19,22 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 h2 {
   color: orange;
   text-align: center;
-  font-size: 25px;
-  padding: 15px;
+  font-size: 1.5625rem; /* 25px / 16px */
+  padding: 0.9375rem; /* 15px / 16px */
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
 }
+
 /* 1024px - 1200px = desktop */
 @media (min-width: 1024px) {
   h2 {
-    font-size: 36px;
+    font-size: 2.25rem; /* 36px / 16px */
   }
 }

@@ -1,25 +1,26 @@
 #sectionHome {
   background-color: #292929;
   display: block;
-  height: 450px;
-  margin: 10px 0;
-  max-width: 480px;
-  min-width: 360px;
+  height: 28.125rem;
+  margin: 0.625rem auto;
+  max-width: 30rem;
+  min-width: 22.5rem;
 }
 
 #homeItem1 {
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: white;
   font-weight: lighter;
   width: fit-content;
-  padding: 15px;
+  padding: 0.9375rem;
   grid-area: homeItem1;
 }
+
 #homeItem2 {
   display: block;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem;
   background: -webkit-linear-gradient(
     left,
     orange,
@@ -30,11 +31,12 @@
   -webkit-text-fill-color: transparent;
   width: fit-content;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0.9375rem;
   grid-area: homeItem2;
 }
+
 #homeItem3 {
-  font-size: 1em;
+  font-size: 1rem;
   background: -webkit-linear-gradient(
     top left,
     orange,
@@ -48,20 +50,21 @@
   cursor: pointer;
   outline: inherit;
   text-align: center;
-  line-height: 45px;
-  height: 45px;
-  width: 120px;
+  line-height: 2.8125rem;
+  height: 2.8125rem;
+  width: 7.5rem;
   display: block;
-  margin: 15px auto;
-  border-radius: 4px;
+  margin: 0.9375rem auto;
+  border-radius: 0.25rem;
   grid-area: homeItem3;
 }
+
 #homeItem4 {
   position: relative;
   display: block;
   margin: 0 auto;
-  width: 180px;
-  padding-top: 10px;
+  width: 11.25rem;
+  padding-top: 0.625rem;
   grid-area: homeItem4;
 }
 
@@ -70,12 +73,12 @@
 }
 
 /* 768px - 1024px = telas menores, laptops */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   #sectionHome {
     display: grid;
     grid-template-areas: "homeGrid homeItem4";
-    height: 250px;
-    max-width: 752px;
+    height: 15.625rem;
+    max-width: 47rem;
   }
   .homeGrid {
     margin: auto auto;
@@ -90,7 +93,7 @@
   }
   #homeItem3 {
     margin: auto;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
   }
   #homeItem4 {
     padding: 0;
@@ -99,28 +102,31 @@
 }
 
 /* 1024px - 1200px = desktop */
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   #sectionHome {
     max-width: none;
-    height: 340px;
+    height: 21.25rem;
     justify-content: center;
-    grid-template-columns: minmax(554px, 770px) minmax(454px, 630px);
+    grid-template-columns: minmax(34.625rem, 48.125rem) minmax(
+        28.375rem,
+        39.375rem
+      );
   }
   #homeItem1 {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
   #homeItem2 {
-    font-size: 55px;
-    padding-bottom: 25px;
+    font-size: 3.4375rem;
+    padding-bottom: 1.5625rem;
   }
   #homeItem3 {
-    width: 185px;
-    height: 56px;
-    font-size: 20px;
+    width: 11.5625rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
     text-align: center;
-    line-height: 50px;
+    line-height: 3.125rem;
   }
   #homeItem4 {
-    width: 300px;
+    width: 18.75rem;
   }
 }
